@@ -155,6 +155,7 @@ return [
     |
     */
 
+
     'domain' => env('SESSION_DOMAIN'),
 
     /*

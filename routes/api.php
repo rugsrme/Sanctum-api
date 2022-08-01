@@ -29,10 +29,10 @@ Route::get('csrf', function () {
     dd(csrf_token());
 });
 
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
+  Route::post('/register', [AuthController::class, 'register']);
+  Route::post('/login', [AuthController::class, 'login']);
 
-
+// Auth::routes();
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
